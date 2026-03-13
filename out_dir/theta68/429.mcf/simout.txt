@@ -1,0 +1,58 @@
+Global frequency set at 1000000000000 ticks per second
+Redirecting stdout to /v/filer5b/coursework/2026-spring/cs395t-lin/rao/gem5/out_dir/theta68/429.mcf/simout.txt
+Redirecting stderr to /v/filer5b/coursework/2026-spring/cs395t-lin/rao/gem5/out_dir/theta68/429.mcf/simerr.txt
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 12 2026 18:48:57
+gem5 started Mar 12 2026 18:50:26
+gem5 executing on pedagogical-1, pid 839767
+command line: /v/filer5b/coursework/2026-spring/cs395t-lin/rao/gem5/../gem5/build/X86/gem5.opt --outdir=/v/filer5b/coursework/2026-spring/cs395t-lin/rao/gem5/out_dir/theta68/429.mcf -re -- /v/filer5b/coursework/2026-spring/cs395t-lin/rao/gem5/gem5-configs-395t/se_custom_binary_periodic.py --input-bin=/projects/coursework/2026-spring/cs395t-lin/rao/gem5/../gem5-configs-395t/429.mcf/mcf_base.amd64-m64-gcc42-nn --input-args=/projects/coursework/2026-spring/cs395t-lin/rao/gem5/../gem5-configs-395t/429.mcf/inp.in --ff-interval=10000 --warmup-interval=25 --roi-interval=50 --init-ff-interval=10000 --num-rois=3 --bpred=Perceptron4KB_Theta68
+
+Creating SkylakeCPU object: bpred=BranchPredictor
+Creating X86 Switchable Processor: num_cores=1, start_core_type=CPUTypes.KVM, switch_core_type=CPUTypes.TIMING
+Creating ThreeLevelClassicHierarchy
+***Fast-forward interval: 10,000,000,000 instructions
+***Warmup interval      : 25,000,000 instructions
+***ROI interval         : 50,000,000 instructions
+***Initial fast-forward : 10,000,000,000 instructions
+***Maximum ROIs         : 3
+***Start on m5.workbegin: False
+***Continue simulation  : False
+***Beginning simulation!
+Creating L1DCache object: size=32768, assoc=8, pref=StridePrefetcher, repl=LRURP
+Creating L1ICache object: size=32768, assoc=8, pref=<class 'm5.params.null_params.NullSimObject'>, repl=LRURP
+Creating L2Cache object: size=1048576, assoc=16, pref=<class 'm5.params.null_params.NullSimObject'>, repl=LRURP
+Creating MMUCache object
+Creating MMUCache object
+Creating LLCache object: size=8388608, assoc=16, pref=<class 'm5.params.null_params.NullSimObject'>, repl=LRURP
+
+MCF SPEC CPU2006 version 1.10
+Copyright (c) 1998-2000 Zuse Institut Berlin (ZIB)
+Copyright (c) 2000-2002 Andreas Loebel & ZIB
+Copyright (c) 2003-2005 Andreas Loebel
+
+nodes                      : 25137
+active arcs                : 260767
+simplex iterations         : 226605
+objective value            : 15887540369
+***Instruction 10,000,000,061: Entering ROI #1 fast-forward phase.
+***Instruction 20,000,000,101: Entering ROI #1 warmup phase and switching to detailed processor.
+switching cpus
+***Instruction 20,026,044,542: Entering ROI #1 simulation phase
+***Instruction 20,077,190,276: Entering ROI #2 fast-forward phase and switching to fast-forward processor.
+switching cpus
+***Instruction 30,077,373,262: Entering ROI #2 warmup phase and switching to detailed processor.
+switching cpus
+***Instruction 30,103,395,982: Entering ROI #2 simulation phase
+***Instruction 30,154,792,744: Entering ROI #3 fast-forward phase and switching to fast-forward processor.
+switching cpus
+new implicit arcs          : 27067745
+active arcs                : 27328512
+***Instruction 40,155,928,112: Entering ROI #3 warmup phase and switching to detailed processor.
+switching cpus
+***Instruction 40,181,796,647: Entering ROI #3 simulation phase
+***Instruction 40,232,384,619: Completed all ROIs, ending simulation.
+***Instruction 40,232,384,619, tick 70,343,376,449,500: Simulator exited because a thread reached the max instruction count.
+***Total wall clock time: 52.88 min
